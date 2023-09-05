@@ -1,0 +1,27 @@
+// Print Hollow Rectangle
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int row=0; row<3; row=row+1){
+        // first row and last row
+        if(row==0 || row==2) {
+            for(int col=0; col<5; col++){
+                cout << "*";
+            }
+        }
+        else {
+            // remaning middle rows
+            // first star
+            cout << "*";
+            // space
+            for(int i=0; i<3; i=i+1){
+                cout << " ";
+            }
+            // last start
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+}
