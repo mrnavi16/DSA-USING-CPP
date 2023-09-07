@@ -1,0 +1,19 @@
+// lower-bound and upper-bound of element
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main() {
+vector<int> v{1,3,3,3,3,3,4,4,4,4,4,4,4,6,7};
+int target = 4;
+
+// lower bound for target 4
+auto  lowerbound = lower_bound(v.begin(), v.end(), target);
+cout << "lower bound is " << lowerbound-v.begin() << endl;
+
+// upper bound for target 4
+auto upperbound = upper_bound(v.begin(), v.end(), target);
+cout << "upper bound is " << upperbound-v.begin() << endl;
+}
