@@ -1,0 +1,31 @@
+// find-peak-index-in-a-mountain-array
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int findPeakIndex(vector<int> arr) {
+    int s = 0;
+    int e = arr.size()-1;
+    int mid = s+(e-s)/2;
+    
+    while(s<e) {
+        if(arr[mid]<arr[mid+1]) {
+            // right search
+            s = mid+1;
+        }
+        else {
+            e = mid;
+        }
+        mid = s+(e-s)/2;
+    }
+    return arr[s];
+}
+
+int main() {
+vector<int> arr{2,4,7,10,11,2,4,9,6};
+   int ans = findPeakIndex(arr);
+   cout << ans << endl;
+
+}
