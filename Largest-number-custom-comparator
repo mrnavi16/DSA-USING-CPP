@@ -1,0 +1,20 @@
+Largest-number-custom-comparator
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+bool cmp(char first, char second) {
+  
+    return first > second; // decending order
+    // return first < second; // asending order
+    
+}
+int main() {
+    string s = "navneet";
+    sort(s.begin(), s.end(),cmp);
+    
+    cout << s << endl;
+    
+    return 0;
+}
