@@ -1,0 +1,26 @@
+//integer-ascending-descending-custom-comparator
+
+// its for integer ascending and descending
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+bool compare(int a, int b ){
+    //If you want to check what is happening this code
+    cout << "first number is " << a;
+    cout << " second number is " << b << endl << endl;
+    return a > b;
+}
+int main() {
+    vector<int> v{5,3,1,2,4};
+    sort(v.begin(), v.end(), compare);
+    
+    for(auto i:v) {
+        cout << i << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
