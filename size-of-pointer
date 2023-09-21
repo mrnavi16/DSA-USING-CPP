@@ -1,0 +1,19 @@
+// size-of-pointer
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int a = 22;
+    int *p = &a;
+    cout << sizeof(p) << endl;
+    
+    char ch = 'n';
+    char *c = &ch;
+    cout << sizeof(c) << endl;
+    
+    double dtr = 22.28;
+    double *d = &dtr;
+    cout << sizeof(d) << endl;
+}
