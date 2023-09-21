@@ -1,0 +1,19 @@
+// find-address-of-variable(a)
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a = 22;
+    int b = 28;
+    cout << a << endl;
+    
+    // & - address of operator
+    cout << &a << endl;
+    
+    // &b - address of b
+    cout << b << endl;
+    cout << &b << endl;
+    
+    return 0;
+}
