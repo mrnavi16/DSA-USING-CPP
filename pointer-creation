@@ -1,0 +1,17 @@
+// pointer-creation
+
+#include<iostream>
+using namespace std;
+
+
+int main() {
+    int a = 28;
+    
+    // pointer create
+    int *ptr = &a;
+    
+    cout << "Address of a is " << &a << endl;
+    cout << "value stored at ptr is " << ptr << endl;
+    cout << "value ptr is pointing to is " << *ptr << endl;
+    cout << "Address of ptr is " << &ptr << endl;
+}
